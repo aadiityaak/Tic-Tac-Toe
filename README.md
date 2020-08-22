@@ -1,3 +1,3 @@
 # Tic-Tac-Toe
 
-belajar p5 js 
+belajar membuat Tic Tac Toe menggunakan p5.js 
