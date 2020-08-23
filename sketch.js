@@ -1,9 +1,4 @@
 // @aadiityaak 
-
-
-
-
-
 let board = [
   ['','',''],
   ['','',''],
@@ -20,8 +15,7 @@ function setup() {
   createCanvas(400, 400);
   w = width / 3;
   h = height / 3;
-
-  nextTurn();
+  bestMove();
 }
 
 function equals3(a,b,c){
@@ -84,7 +78,7 @@ function mousePressed() {
     if(board[i][j] == ''){
       board[i][j] = human;
       curentPlayer = ai;
-      nextTurn();
+      bestMove();
     }
   }
 }
@@ -116,7 +110,6 @@ function draw() {
   }
   
   let result = checkWinner();
-  console.log(result);
   if(result != null){
     noLoop();
     let resultP = createP('');
